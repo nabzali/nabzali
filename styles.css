@@ -83,6 +83,9 @@ section {
   padding: 60px 0;
   color: white;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -92,11 +95,11 @@ footer {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 72px;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 36px;
   color: #40e0d0;
 }
 
