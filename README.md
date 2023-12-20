@@ -3,9 +3,9 @@
 ## About Me
 
 - 💻 Software Engineer & Technical Consultant
-- ⌨️ Languages: Python🐍, JavaScript🔥, Java♨️, C#️⃣, and more! 
-- 🎓 Graduate of Computer Science at University of Nottingham, with Year in Industry at IBM
-- Certified AWS Cloud Practitioner 🔜
+- 💬 Languages: Python🐍, JavaScript🔥, Java♨️, C#️⃣, and more! 
+- 🎓 Graduate of Computer Science at University of Nottingham, with Year in Industry at IBM 🤓
+- Certified AWS Cloud☁️ Practitioner (🔜)
 - Lover of God 🤲📿
 
 ## 🔧 Featured Projects
@@ -14,11 +14,11 @@
    - Description: Repo for my personal website, [nabzali.github.io](https://nabzali.github.io)
 - Frameworks/Language(s): HTML, CSS
 
-### 2. [Project B](link-to-project-B)
+### 2. [Web Scraper]()
    - Description: A sleek and efficient [Project B] for all your coding needs.
    - Language: [Language Used]
 
-### 3. [Project C](link-to-project-C)
+### 3. [Coming Soon](link-to-project-C)
    - Description: Dive into the magic of [Project C], where code meets creativity!
    - Language: [Language Used]
 
