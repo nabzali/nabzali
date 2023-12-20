@@ -2,7 +2,7 @@
 
 ## About Me
 
-- 💻 Software Engineer & Technical Consultant
+- 💻 Full-Stack Software Engineer & Technical Consultant
 - 💬 Languages: Python🐍, JavaScript🔥, Java♨️, C#️⃣, and more! 
 - 🎓 Graduate of Computer Science at University of Nottingham, with Year in Industry at IBM 🤓
 - Certified AWS Cloud☁️ Practitioner (🔜)
