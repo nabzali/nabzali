@@ -11,9 +11,8 @@
 
 ## 🔧 Featured Projects
 
-### 1. [Personal Website](https://wwww.github.com/nabzali/nabzali.github.io)
-   - Description: Blazing fast [Project A] that will change your coding game!
-   - Language: [Language Used]
+### 1. [Personal Website](https://github.com/nabzali/nabzali.github.io)
+   - Description: Repo for my personal website, [nabzali.github.io](https://nabz-ali.github.io)
 
 ### 2. [Project B](link-to-project-B)
    - Description: A sleek and efficient [Project B] for all your coding needs.
