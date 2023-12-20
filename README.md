@@ -1,7 +1,5 @@
 # Welcome to my Personal GitHub! 🥶
 
-(This README was generated this with AI)
-
 ## 🧑‍💻 About Me
 
 - 💻 Software Engineer & Technical Consultant
