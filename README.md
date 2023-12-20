@@ -22,6 +22,10 @@
    - Description: Dive into the magic of [Project C], where code meets creativity!
    - Language: [Language Used]
 
+### 4. [Python Projects](link-to-project-C)
+   - Description: Dive into the magic of [Project C], where code meets creativity!
+   - Language: [Language Used]
+
 ## 🚀 What's Next?
 
 I plan to embark on more exciting projects and adding to these repositories in the near future 🚀✨
