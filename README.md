@@ -1,17 +1,17 @@
-# Welcome to Nabeel Ali's GitHub Playground! ⌨️ 🖱️ 💻 🖤
+# Welcome to my Personal GitHub! 🥶
 
 (This README was generated this with AI)
 
 ## 🧑‍💻 About Me
 
 - 💻 Software Engineer & Technical Consultant
-- 🌐 Languages: Python🐍, JavaScript 🧡, Java♨️, C#️⃣, and more!
+- ⌨️ Languages: Python🐍, JavaScript🔥, Java♨️, C#️⃣, and more! 
 - 🎓 Graduate of Computer Science at University of Nottingham, with Year in Industry at IBM
 - Certified AWS Cloud Practitioner 🔜
 
 ## 🔧 Featured Projects
 
-### 1. [Project A](link-to-project-A)
+### 1. [Personal Website](https://wwww.github.com/nabzali/nabzali.github.io)
    - Description: Blazing fast [Project A] that will change your coding game!
    - Language: [Language Used]
 
