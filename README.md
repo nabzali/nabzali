@@ -11,7 +11,7 @@
 ## 🔧 Featured Projects
 
 ### 1. [Personal Website](https://github.com/nabzali/nabzali.github.io)
-   - Description: Repo for my personal website, [nabzali.github.io](https://nabz-ali.github.io)
+   - Description: Repo for my personal website, [nabzali.github.io](https://nabzali.github.io)
 
 ### 2. [Project B](link-to-project-B)
    - Description: A sleek and efficient [Project B] for all your coding needs.
