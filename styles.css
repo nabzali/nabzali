@@ -8,6 +8,7 @@
   body #navleft,
   body #navright {
     float: none;
+    display: block;
   }
   body #navleft {
     margin-bottom: 5px;
@@ -15,13 +16,84 @@
   body li {
     margin-left: 0;
   }
+
+  body h1 {
+    font-size: 36px;
+  }
+}
+
+.btnLong,
+.btnIcon {
+  /*background-color: rgb(14, 124, 157);*/
+  border: 2px solid #0ef;
+  background-color: transparent;
+  text-align: center;
+  color: #0ef;
+  font-weight: 600;
+  font-size: 0.8rem;
+  /* text-shadow: 0px 0.5px 1px #333; */
+  transition: color 0.3s ease-in-out;
+}
+
+.btnLong {
+  padding: 0.5rem 0.3rem 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  width: 150px;
+}
+
+.btnIcon {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-right: 5px;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.btnGroup a i {
+  color: #0ef;
+}
+
+.btnLong:hover,
+.btnIcon:hover {
+  box-shadow: 0 0 0.5rem #0ef;
+  color: #0a1015;
+  background-color: #0ef;
+}
+
+.btnLong:hover i {
+  color: #0a1015;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 15vh;
+  margin-top: 20px;
+}
+
+.btnGroup a {
+  margin-bottom: 20px;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #0e171f;
+  background-color: #0a1015;
 }
 
 .container {
@@ -30,7 +102,7 @@ body {
 }
 
 header {
-  background-color: #0e171f;
+  background-color: #0a1015;
   padding: 30px 0;
   text-align: center;
   position: fixed;
@@ -45,7 +117,7 @@ header h1 {
 }
 
 #name {
-  color: #40e0d0;
+  color: #0ef;
 }
 
 #navright {
@@ -69,8 +141,7 @@ li {
 
 i {
   color: #ffffff;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0px 10px 0px 10px;
 }
 
 a,
@@ -88,8 +159,8 @@ a {
 
 li:hover a,
 li:hover i {
-  color: #40e0d0;
-  text-shadow: 0.5px 0.5px 0.5px #40e0d0;
+  color: #0ef;
+  text-shadow: 0px 0px 0.2rem #0ef;
 }
 
 section {
@@ -109,15 +180,14 @@ footer {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 3rem;
+  color: #0ef;
+  margin: 0px;
+  padding: 0px;
 }
 
 h2 {
-  font-size: 36px;
-  color: #40e0d0;
-}
-
-h1,
-h2 {
-  text-align: center;
+  font-size: 1rem;
+  margin: 0px;
+  padding: 0px;
 }
