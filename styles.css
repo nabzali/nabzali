@@ -2,6 +2,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  /* border: 1px dotted #ffffff59; */
 }
 
 @media (max-width: 1200px) {
@@ -114,7 +115,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -223,15 +224,16 @@ h2 {
 }
 
 .timeline-content {
-  padding: 20px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 0.7rem;
   color: #fff;
-  padding: 1.75rem;
   transition: 0.4s ease;
   overflow-wrap: break-word !important;
   margin: 1rem;
   margin-bottom: 20px;
-  border: 2px solid #0ef;
-  border-radius: 20px;
+  background: linear-gradient(180deg, rgb(19, 19, 19) 0%, rgb(23, 23, 23) 100%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-component {
@@ -241,10 +243,11 @@ h2 {
 @media screen and (min-width: 768px) {
   .timeline {
     display: grid;
-    grid-template-columns: 1fr 3px 1fr;
+    grid-template-columns: 1fr 5px 1fr;
   }
   .timeline-middle {
     position: relative;
+    top: 40%;
     background-image: linear-gradient(45deg, #0ef, #0ef, #0ef);
     width: 3px;
     height: 100%;
@@ -254,13 +257,21 @@ h2 {
   }
   .timeline-circle {
     position: absolute;
-    top: 40%;
+    top: 100%;
     left: 50%;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-image: linear-gradient(45deg, #0ef, #0ef, #0ef);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+
+  #circle-top {
+    top: 0%;
+  }
+}
+
+h3 {
+  font-size: 12px;
 }
