@@ -6,24 +6,6 @@
   /* border: 1px dotted #ffffff; */
 }
 
-@media (max-width: 1200px) {
-  body #navleft,
-  body #navright {
-    float: none;
-    display: block;
-  }
-  body #navleft {
-    margin-bottom: 5px;
-  }
-  body li {
-    margin-left: 0;
-  }
-
-  body h1 {
-    font-size: 36px;
-  }
-}
-
 .tooltip {
   background-color: #000;
   font-size: 9px;
@@ -34,40 +16,36 @@
   padding: 3px;
 }
 
-.btnLong,
-.btnIcon {
-  /*background-color: rgb(14, 124, 157);*/
-  border: 2px solid #0ef;
-  background-color: transparent;
-  text-align: center;
-  color: #0ef;
-  font-weight: 600;
-  font-size: 0.8rem;
-  /* text-shadow: 0px 0.5px 1px #333; */
-  transition: color 0.3s ease-in-out;
-  margin: 0px 5px 0px 5px;
-}
-
 .btnLong {
-  padding: 0.5rem 0.3rem 0.5rem 1rem;
-  border-radius: 20px;
+  margin: 20px 5px 5px 5px;
+  padding: 6px 2px 6px 10px;
+  border-radius: 30px;
   display: inline-block;
-  width: 150px;
+  width: 160px;
+  height: 25px;
 }
 
 .btnIcon {
-  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+  margin: 0px 5px 0px 5px;
+  padding: 7px;
   border-radius: 50px;
   width: 20px;
   height: 20px;
 }
 
 .icon {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
-.btnGroup a i {
+.btnLong,
+.btnIcon {
+  border: 2px solid #0ef;
+  background-color: transparent;
+  text-align: center;
   color: #0ef;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: color 0.3s ease-in-out;
 }
 
 .btnLong:hover,
@@ -103,24 +81,14 @@
   margin: 15px 0px 15px 0px;
 }
 
-.btnGroup {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin: 10px 0px 10px 0px;
-  height: 90px; /* Adjust this value according to your design */
-  margin-top: 20px;
-}
-
 body {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   background-color: #0a1015;
 }
 
 .container {
   width: 85%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -138,21 +106,18 @@ header {
   z-index: 1000;
 }
 
-header h1 {
-  margin: 0;
-  display: inline-block;
+#name {
+  float: left;
 }
 
-#name {
+#name,
+.blueText,
+.btnLong i {
   color: #0ef;
 }
 
-#navright {
+nav {
   float: right;
-}
-
-#navleft {
-  float: left;
 }
 
 ul {
@@ -175,7 +140,7 @@ a,
 #name,
 i {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
 }
 
@@ -206,25 +171,44 @@ footer {
   text-align: center;
 }
 
+p {
+  font-size: 0.7rem;
+}
+
 h1 {
-  font-size: 3rem;
-  color: #0ef;
-  margin: 0px;
-  padding: 0px;
+  font-size: 38px;
+  margin: 0px 5px;
 }
 
 h2 {
-  font-size: 1rem;
-  margin: 0px 2.5px 0px 2.5px;
-  padding: 0px;
+  font-size: 20px;
+  margin: 0px 5px;
+}
+
+h3 {
+  font-size: 0.8rem;
+  text-shadow: 2px 2px 20px #000000;
+}
+
+.top-right-text {
+  position: relative;
+  font-size: 0.6rem;
+  float: right;
+  border-radius: 5px;
+  bottom: 100%;
+  top: -15px;
+  right: 5px;
+  padding: 4px 8px 4px 8px;
+  size: 10px;
+  background-color: rgb(10, 10, 10);
 }
 
 /* new styles  */
 
 .timeline {
   width: 100%;
+  max-width: 900px;
   height: auto;
-  max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -234,7 +218,6 @@ h2 {
 
 .timeline-content {
   padding: 4px 10px 4px 10px;
-  font-size: 10px;
   color: #fff;
   transition: 0.4s ease;
   overflow-wrap: break-word !important;
@@ -276,23 +259,4 @@ h2 {
 
 #circle-top {
   top: 0%;
-}
-/* } */
-
-h3 {
-  font-size: 11px;
-  text-shadow: 2px 2px 20px #000000;
-}
-
-.top-right-text {
-  position: relative;
-  font-size: 8.5px;
-  float: right;
-  border-radius: 5px;
-  bottom: 100%;
-  top: -15px;
-  right: 5px;
-  padding: 4px 8px 4px 8px;
-  size: 10px;
-  background-color: rgb(10, 10, 10);
 }
