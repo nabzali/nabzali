@@ -31,6 +31,8 @@
   border-radius: 50px;
   width: 20px;
   height: 20px;
+  color: #0a1015;
+  background-color: #0ef;
 }
 
 .icon {
@@ -39,8 +41,8 @@
 
 .btnLong,
 .btnIcon {
-  border: 2px solid #0ef;
-  background-color: transparent;
+  box-shadow: 0 0 0.5rem #0ef;
+  background: transparent;
   text-align: center;
   color: #0ef;
   font-weight: 600;
@@ -50,9 +52,8 @@
 
 .btnLong:hover,
 .btnIcon:hover {
-  box-shadow: 0 0 0.5rem #0ef;
-  color: #0a1015;
   background-color: #0ef;
+  color: black;
 }
 
 .btnLong:hover i {
@@ -110,6 +111,10 @@ header {
   float: left;
 }
 
+.blueText {
+  animation: pulse 5s ease-in-out infinite;
+}
+
 #name,
 .blueText,
 .btnLong i {
@@ -136,7 +141,7 @@ i {
   margin: 0px 10px 0px 10px;
 }
 
-a,
+nav a,
 #name,
 i {
   font-weight: bold;
@@ -153,6 +158,18 @@ li:hover a,
 li:hover i {
   color: #0ef;
   text-shadow: 0px 0px 0.2rem #0ef;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 0 #0ef; /* Initial shadow */
+  }
+  50% {
+    text-shadow: 0 0 20px #0ef; /* Intermediate shadow */
+  }
+  100% {
+    text-shadow: 0 0 1px #0ef; /* Final shadow */
+  }
 }
 
 section {
@@ -175,14 +192,18 @@ p {
   font-size: 0.7rem;
 }
 
+h1,
+h2 {
+  margin: 0px 5px;
+}
+
 h1 {
   font-size: 38px;
-  margin: 0px 5px;
+  animation: pulse 5s ease-in-out infinite;
 }
 
 h2 {
   font-size: 20px;
-  margin: 0px 5px;
 }
 
 h3 {
@@ -217,7 +238,7 @@ h3 {
 }
 
 .timeline-content {
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   color: #fff;
   transition: 0.4s ease;
   overflow-wrap: break-word !important;
@@ -229,10 +250,17 @@ h3 {
 }
 
 .timeline-component {
-  margin: 0px 20px 20px 20px;
+  margin: 10px 20px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 0.6rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
 }
 .timeline-middle {
   position: relative;
