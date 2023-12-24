@@ -56,6 +56,10 @@
   color: black;
 }
 
+.btnIcon:hover {
+  transform: translateY(5px) scale(1.1);
+}
+
 .btnLong:hover i {
   color: #0a1015;
 }
@@ -112,7 +116,7 @@ header {
 }
 
 .blueText {
-  animation: pulse 5s ease-in-out infinite;
+  animation: pulse 4s ease-in-out infinite;
 }
 
 #name,
@@ -157,7 +161,6 @@ a {
 li:hover a,
 li:hover i {
   color: #0ef;
-  text-shadow: 0px 0px 0.2rem #0ef;
 }
 
 @keyframes pulse {
@@ -165,7 +168,7 @@ li:hover i {
     text-shadow: 0 0 0 #0ef; /* Initial shadow */
   }
   50% {
-    text-shadow: 0 0 20px #0ef; /* Intermediate shadow */
+    text-shadow: 0 0 50px #0ef; /* Intermediate shadow */
   }
   100% {
     text-shadow: 0 0 1px #0ef; /* Final shadow */
@@ -199,7 +202,6 @@ h2 {
 
 h1 {
   font-size: 38px;
-  animation: pulse 5s ease-in-out infinite;
 }
 
 h2 {
@@ -247,6 +249,10 @@ h3 {
   background: linear-gradient(180deg, rgb(25, 25, 25) 0%, rgb(23, 23, 23) 100%);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-content:hover {
+  box-shadow: 0 0 10px #0ef;
 }
 
 .timeline-component {
