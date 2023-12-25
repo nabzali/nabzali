@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    
     <link rel="stylesheet" href="styles.css" />
     <title>Nabeel Ali - Portfolio</title>
   </head>
@@ -13,7 +15,7 @@
   ></script>
   <body>
     <header>
-      <div class="container">
+      <div class="container" id="nav-container">
         <span id="name">Portfolio.</span> 
         <nav>
           <ul>
@@ -40,36 +42,53 @@
 
     <section id="home">
       <div class="container">
-          <!-- <h2>السلام عليكم ورحمة الله وبركاته</h2> -->
-          
-          <h1>Hi, it's <span class="blueText">Nabeel Ali</span></h1>
-          <h2>And I'm a <span class="blueText">Full-Stack Software Developer</span></h2>
-          <h2>Welcome to my Personal Website...</h2>
-           
-          <a class="btnLong" href="#"
-            >Download CV<i id="download" class="fa-solid fa-download"></i
-          ></a>
-          <div class="social-media">
-              <a class="btnIcon" data-tooltip="LinkedIn" href="https://linkedin.com/in/nabeel-s-ali"
-                ><iconify-icon class="icon" icon="mdi:linkedin"></iconify-icon
+        <!-- <h2>السلام عليكم ورحمة الله وبركاته</h2> -->
+
+        <!-- <div class="terminal">
+          <div class="terminal-titlebar">Terminal —  admin@nabzali.github.io: ~</div>
+          <div class="terminal-body">$ <span class="terminal-text"></span></div>
+        </div> -->
+        <div class="content-wrapper">
+          <div class="home-content-left">
+            <h1>Hi, it's <span class="blue-text">Nabeel Ali</span></h1>
+            <h2>And I'm a <span class="dynamic-text blue-text"></span></h2>
+            <h2>Welcome to my Personal Website...</h2>
+            <div class="optionBtns">
+              <a class="btn btnLong" id="download-cv" href="#"
+                >Download CV<i id="download" class="fa-solid fa-download"></i
               ></a>
-              <a class="btnIcon" data-tooltip="Instagram" href="https://www.instagram.com/nabz.ali_"
-                ><iconify-icon class="icon" icon="ri:instagram-fill"></iconify-icon></a>
-              <a class="btnIcon" data-tooltip="Pinterest" href="https://www.pinterest.co.uk/L99B4N/"
-                ><iconify-icon class="icon" icon="jam:pinterest"></iconify-icon>
+              <a class="btn btnLong" id="launch-terminal" href="#"
+                >Launch Terminal<iconify-icon class="icon" icon="material-symbols:terminal"></iconify-icon>
               </a>
-              <a class="btnIcon" data-tooltip="GitHub" href="https://github.com/nabzali"
-                ><iconify-icon class="icon" icon="mdi:github"></iconify-icon
-              ></a>
-              <a class="btnIcon" data-tooltip="Leetcode" href="https://leetcode.com/nabz99/"
-                ><iconify-icon
-                  class="icon"
-                  icon="simple-icons:leetcode"
-                ></iconify-icon>
-              </a>
-              
             </div>
+            <div class="social-media">
+                <a class="btn btnIcon" data-tooltip="LinkedIn" href="https://linkedin.com/in/nabeel-s-ali"
+                  ><iconify-icon class="icon" icon="mdi:linkedin"></iconify-icon
+                ></a>
+                <a class="btn btnIcon" data-tooltip="Instagram" href="https://www.instagram.com/nabz.ali_"
+                  ><iconify-icon class="icon" icon="ri:instagram-fill"></iconify-icon></a>
+                <a class="btn btnIcon" data-tooltip="Pinterest" href="https://www.pinterest.co.uk/L99B4N/"
+                  ><iconify-icon class="icon" icon="jam:pinterest"></iconify-icon>
+                </a>
+                <a class="btn btnIcon" data-tooltip="GitHub" href="https://github.com/nabzali"
+                  ><iconify-icon class="icon" icon="mdi:github"></iconify-icon
+                ></a>
+                <a class="btn btnIcon" data-tooltip="Leetcode" href="https://leetcode.com/nabz99/"
+                  ><iconify-icon
+                    class="icon"
+                    icon="simple-icons:leetcode"
+                  ></iconify-icon>
+                </a>
+                
+            </div>
+          </div>
+          <div class="home-content-right">
+            <img src="./assets/graduation-pic-sq.png"/>
+          </div>
+        </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="./script.js"></script>
     </section>
 
     <section id="about">

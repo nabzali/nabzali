@@ -1,1 +1,0 @@
-# nabzali.github.io
