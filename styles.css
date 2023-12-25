@@ -10,6 +10,18 @@ html {
   /* border: 1px dotted white; */
 }
 
+body {
+  box-sizing: border-box;
+  /* background-color: #0a1015; */
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(41, 55, 71) 0%,
+    #0a1015 100%
+  );
+  /* overflow: hidden; */
+  /* filter: drop-shadow(0 0 10px white); */
+}
+
 .home-content-right {
   display: grid;
   place-items: center;
@@ -43,17 +55,21 @@ html {
 
 .terminal-body {
   font-family: Consolas;
-  color: #0ef;
   padding-top: 5px;
   border-radius: 0 0 12px 12px;
   background-color: #00000095;
-  height: 500px;
+  height: 300px;
   width: 600px;
 }
 
 .terminal-text {
   white-space: pre-line;
-  color: rgb(255, 255, 255) !important;
+  color: rgb(252, 153, 31);
+  font-family: Consolas;
+}
+.terminal-text b {
+  white-space: pre-line;
+  color: rgb(255, 255, 255);
   font-family: Consolas;
 }
 
@@ -134,14 +150,6 @@ html {
   margin: 15px 0px 15px 0px;
 }
 
-body {
-  box-sizing: border-box;
-  /* background-color: #0a1015; */
-  background: radial-gradient(ellipse at bottom, #263443 0%, #0a1015 100%);
-  /* overflow: hidden; */
-  /* filter: drop-shadow(0 0 10px white); */
-}
-
 .container {
   width: 85%;
   max-width: 1200px;
@@ -159,11 +167,12 @@ body {
 }
 
 img {
-  height: 200;
-  width: 200px;
+  height: 200px;
+  width: 210px;
   margin: 0 30% 0 70%;
   border-radius: 100%;
-  transform: translateX(100%) scale(1.3);
+  transform: translateX(300px) translateY(-10px) scale(1.3);
+  box-shadow: 0 0 2rem #0ef;
   /* animation: box-animation 2s infinite; */
 }
 
@@ -190,7 +199,7 @@ header {
 }
 
 .blue-text {
-  color: #0ef;
+  color: #0ef !important;
 }
 
 nav {
