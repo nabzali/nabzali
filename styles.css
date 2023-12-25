@@ -20,35 +20,38 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transform: translateY(-30px);
 }
 
 .terminal-titlebar {
   font-family: Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #fff;
+  text-shadow: 40px 100px 20px #000;
   font-size: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(
     180deg,
-    rgb(158, 153, 153) 0%,
-    rgba(126, 126, 126, 1) 100%
+    rgb(112, 110, 110) 0%,
+    rgb(74, 73, 73) 100%
   );
-  height: 20px;
-  width: 40%;
+  height: 25px;
+  width: 600px;
   border-radius: 12px 12px 0 0;
 }
 
 .terminal-body {
   padding-top: 5px;
   border-radius: 0 0 12px 12px;
-  background-color: #000;
-  height: 300px;
-  width: 40%;
+  background-color: #00000095;
+  height: 500px;
+  width: 600px;
 }
 
 .terminal-text {
   color: rgb(255, 255, 255) !important;
+  font-family: Consolas;
 }
 
 .btnLong {
@@ -130,7 +133,10 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #0a1015;
+  /* background-color: #0a1015; */
+  background: radial-gradient(ellipse at bottom, #263443 0%, #0a1015 100%);
+  /* overflow: hidden; */
+  /* filter: drop-shadow(0 0 10px white); */
 }
 
 .container {
@@ -163,7 +169,7 @@ img {
 }
 
 header {
-  background-color: #0a1015;
+  background: transparent;
   padding: 30px 0;
   text-align: center;
   position: fixed;
