@@ -1,4 +1,4 @@
-var jobTitleText = new Typed(".dynamic-text", {
+new Typed(".dynamic-text", {
   strings: [
     "Front-end Developer",
     "Back-end Developer",
@@ -10,10 +10,10 @@ var jobTitleText = new Typed(".dynamic-text", {
   loop: true,
 });
 
-var terminalText = new Typed(".terminal-text", {
+new Typed("#tName", {
   strings: [
-    "Name: Nabeel S. Ali \n Ocupation: Full-Stack Software Developer and Technical Consultant",
+    "Name: Nabeel S. Ali\nOccupation: Full-Stack Software Developer, Technical Consultant\nQualification(s): BSc Computer Science (with Year in Industry)\nAlma Mater: The University of Nottingham\nHometown: London, United Kingdom\n",
   ],
-  typeSpeed: 100,
+  typeSpeed: 38,
   backSpeed: 100,
 });
