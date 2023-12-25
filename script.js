@@ -12,7 +12,7 @@ var jobTitleText = new Typed(".dynamic-text", {
 });
 
 var terminalText = new Typed(".terminal-text", {
-  strings: ["Are you ready? Press Enter to continue..."],
+  strings: ["Hello? Please Work"],
   typeSpeed: 100,
   backSpeed: 100,
 });

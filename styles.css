@@ -48,13 +48,13 @@ html {
 }
 
 .terminal-text {
-  font-family: Consolas;
-  color: rgb(255, 255, 255);
-  opacity: 100%;
+  color: rgb(255, 255, 255) !important;
 }
 
 .btnLong {
-  margin: 20px 5px 5px 5px;
+  background-color: #0ef !important;
+  color: #000 !important;
+  margin: 20px 0 5px 0;
   padding: 6px 2px 6px 10px;
   border-radius: 30px;
   display: inline-block;
@@ -62,16 +62,9 @@ html {
   height: 25px;
 }
 
-#launch-terminal {
-  background-color: #0ef;
-  color: #000;
-}
-
-#launch-terminal:hover {
-  background-color: black;
-  color: #fff;
-  box-shadow: none;
-  border: 2px solid #fff;
+.btnLong:hover {
+  background: transparent !important;
+  color: #0ef !important;
 }
 
 .btnLong .icon {
@@ -82,17 +75,11 @@ html {
 }
 
 .btnIcon {
-  margin: 0px 5px 0px 5px;
+  margin: 0px 20px 0px 0px;
   padding: 7px;
   border-radius: 50px;
   width: 20px;
   height: 20px;
-  color: #0a1015;
-  background-color: #0ef;
-}
-
-.optionBtns {
-  display: flex;
 }
 
 .icon {
@@ -112,23 +99,21 @@ html {
 .btn:hover {
   background-color: #0ef;
   color: black;
+  transition: 0.3s ease-in-out;
 }
 
 .btnIcon:hover {
-  transform: translateY(3px) scale(1.2);
-}
-
-.btnLong:hover i {
-  color: #0a1015;
+  transform: translateY(5px);
 }
 
 .btnIcon:hover::after {
   content: attr(data-tooltip);
   color: #0ef;
+  opacity: 35%;
   border-radius: 5px;
   font-size: 0.6rem;
   position: relative;
-  bottom: 230%;
+  bottom: 240%;
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -187,17 +172,15 @@ header {
   z-index: 1000;
 }
 
-#name {
+.name {
   float: left;
 }
 
-.blue-text {
+.glow-text {
   animation: pulse-text 4s ease-in-out infinite;
 }
 
-#name,
-.blue-text,
-.btnLong i {
+.blue-text {
   color: #0ef;
 }
 
@@ -221,7 +204,7 @@ i {
 }
 
 nav a,
-#name,
+.name,
 i {
   font-weight: bold;
   font-size: 1.2rem;
@@ -289,7 +272,7 @@ p {
 
 h1,
 h2 {
-  margin: 0px 5px;
+  margin: 0 0;
 }
 
 h1 {
