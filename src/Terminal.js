@@ -25,7 +25,7 @@ function Terminal() {
       <div class="terminal">
         <div class="terminal-titlebar">Terminal — nabzali.github.io</div>
         <div class="terminal-body terminal-text">
-          <b class="blue-text">admin@github.io:~$ </b>
+          <b class="blue-text">user@nabzali.github.io:~$ </b>
           <span ref={el} id="tName" class="terminal-text"></span>
         </div>
       </div>

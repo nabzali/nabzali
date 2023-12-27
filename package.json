@@ -1,6 +1,6 @@
 {
   "name": "my-site",
-  "homepage": "http://nabzali.github.io/my-site",
+  "homepage": "https://nabzali.github.io/my-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

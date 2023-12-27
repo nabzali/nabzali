@@ -259,6 +259,7 @@ a.btn-long svg {
   color: #fff;
   border-radius: 100px;
   background-color: rgb(41, 55, 71);
+  background-color: #0a1015;
   box-shadow: 5px 5px 20px #000;
   /* animation: white-box-animation 4s infinite; */
   transform: scale(0.8);
@@ -303,7 +304,7 @@ a h2 {
 }
 
 .terminal-body {
-  font-family: Consolas;
+  font-family: "Consolas", monospace;
   font-size: 1.25rem;
   padding: 10px 10px 0 10px;
   border-radius: 0 0 12px 12px;
@@ -316,11 +317,11 @@ a h2 {
 .terminal-text {
   white-space: pre-line;
   color: rgb(252, 153, 31);
-  font-family: Consolas;
+  font-family: "Consolas", monospace;
 }
 .terminal-text b {
   color: rgb(255, 255, 255);
-  font-family: Consolas;
+  font-family: "Consolas", monospace;
 }
 
 img {
@@ -388,7 +389,6 @@ img {
   flex-direction: column;
   display: grid;
   grid-template-columns: 1fr 5px 1fr;
-  transform: scale(1.35);
 }
 
 .timeline-content {
