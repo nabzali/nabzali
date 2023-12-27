@@ -8,6 +8,7 @@ import Navigation from "./Navigation";
 import SocialMedia from "./SocialMedia";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import avatar from "./assets/hacker-avatar.jpg";
 
 function App() {
   const el = React.useRef(null);
@@ -66,7 +67,7 @@ function App() {
               </div>
             </div>
             <div class="home-content-right">
-              <img src="./assets/hacker-avatar.jpg"></img>
+              <img src={avatar}></img>
             </div>
           </div>
           <SocialMedia></SocialMedia>

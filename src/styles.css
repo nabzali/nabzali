@@ -97,8 +97,19 @@ li:hover i {
 }
 
 .home-content-right {
-  display: grid;
-  place-items: center;
+  margin-right: 0;
+  padding-right: 0;
+  right: 0;
+}
+
+img {
+  height: 200px;
+  width: 210px;
+  margin: 0 30% 0 70%;
+  border-radius: 100%;
+  transform: translateX(300px) translateY(-10px) scale(1.3);
+  box-shadow: 0 0 2rem #0ef;
+  /* animation: white-box-animation 2s infinite; */
 }
 
 .iconify {
@@ -322,16 +333,6 @@ a h2 {
 .terminal-text b {
   color: rgb(255, 255, 255);
   font-family: "Consolas", monospace;
-}
-
-img {
-  height: 200px;
-  width: 210px;
-  margin: 0 30% 0 70%;
-  border-radius: 100%;
-  transform: translateX(300px) translateY(-10px) scale(1.3);
-  box-shadow: 0 0 2rem #0ef;
-  /* animation: white-box-animation 2s infinite; */
 }
 
 #timeline-container {
