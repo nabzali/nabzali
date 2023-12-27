@@ -303,7 +303,7 @@ a.btn-launch-terminal {
   display: flex;
   align-items: center;
   border-radius: 100px;
-  margin: 20px 0;
+  margin: 50px 0;
   height: 35px;
   width: auto;
   box-shadow: 0px 0px 30px #0ef;
@@ -314,7 +314,7 @@ a.btn-launch-terminal {
 a.btn-launch-terminal:hover {
   /* background-color: rgba(41, 55, 71, 0.7); */
   cursor: pointer;
-  transform: scale(1.35);
+  /* transform: scale(1.35); */
 }
 
 a.btn-launch-terminal:active {
@@ -481,6 +481,11 @@ a h2 {
   grid-template-columns: 1fr 5px 1fr;
 }
 
+#timeline-wrapper h1 {
+  position: relative;
+  top: -80%;
+}
+
 .timeline-content {
   padding: 4px 10px;
   color: #fff;
@@ -497,11 +502,22 @@ a h2 {
   box-shadow: 0 0 5px #0ef;
   border: 0.5px solid #0ef;
   background: #0a1015;
+  cursor: pointer;
   /* transform: scale(1.02); */
 }
 
 .timeline-component {
   margin: 10px 20px;
+}
+
+.modal {
+  position: absolute;
+  background-color: #0a1015;
+  border-radius: 50px;
+  height: 50vh;
+  width: 50vh;
+  display: grid;
+  place-items: center;
 }
 
 @media screen and (max-width: 1400px) {

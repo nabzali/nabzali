@@ -100,7 +100,10 @@ function App() {
 
       <section id="timeline">
         <div class="container" id="timeline-container">
-          <Timeline />
+          <div class="wrapper-grid" id="timeline-wrapper">
+            <h1 class="blue-text glow-text">Timeline:</h1>
+            <Timeline />
+          </div>
         </div>
       </section>
       <section id="skills">
