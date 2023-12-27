@@ -65,8 +65,11 @@ function App() {
                 </a>
               </div>
             </div>
-            <div class="home-content-right"></div>
+            <div class="home-content-right">
+              <img src="./assets/hacker-avatar.jpg"></img>
+            </div>
           </div>
+          <SocialMedia></SocialMedia>
         </div>
       </section>
 
