@@ -2,7 +2,7 @@ import "./styles.css";
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 
-const SocialMedia = (props) => {
+function SocialMedia() {
   return (
     <>
       <div class="social-media">
@@ -47,6 +47,6 @@ const SocialMedia = (props) => {
       </div>
     </>
   );
-};
+}
 
 export default SocialMedia;
