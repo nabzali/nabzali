@@ -1,10 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faDownload,
   faCode,
+  faTimeline,
   faHouse,
-  faBusinessTime,
+  faWaveSquare,
   faAddressCard,
   faUserGraduate,
   faMessage,
@@ -30,9 +30,9 @@ function Navigation() {
             </a>
           </li>
           <li>
-            <a href="#history">
-              <FontAwesomeIcon icon={faBusinessTime} />
-              History
+            <a href="#timeline">
+              <FontAwesomeIcon icon={faWaveSquare} />
+              Timeline
             </a>
           </li>
           <li>
@@ -42,9 +42,9 @@ function Navigation() {
             </a>
           </li>
           <li>
-            <a href="#credentials">
+            <a href="#accreditations">
               <FontAwesomeIcon icon={faAddressCard} />
-              Credentials
+              Accreditations
             </a>
           </li>
           <li>

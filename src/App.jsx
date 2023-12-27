@@ -7,7 +7,7 @@ import LaunchBtn from "./LaunchBtn";
 import Navigation from "./Navigation";
 import SocialMedia from "./SocialMedia";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import avatar from "./assets/hacker-avatar.jpg";
 
 function App() {
@@ -49,7 +49,7 @@ function App() {
 
       <section id="home">
         <div class="container">
-          <div class="content-wrapper">
+          <div class="wrapper-flex">
             <div class="home-content-left">
               <h1>
                 Hi, it's <span class="glow-text blue-text">Nabeel Ali</span>
@@ -60,14 +60,18 @@ function App() {
               </h2>
               <h2>Welcome to my Personal Website...</h2>
               <div class="optionBtns">
-                <a class="btn-b btn-long" id="download-cv" href="#">
+                <a class="btn-b btn-long btn-light" id="download-cv" href="#">
                   Download CV
                   <FontAwesomeIcon icon={faDownload} />
                 </a>
+                <a class="btn-b btn-long btn-dark" id="next" href="#about">
+                  Next Section
+                  <FontAwesomeIcon icon={faCircleRight} />
+                </a>
               </div>
             </div>
-            <div class="home-content-right">
-              <img src={avatar}></img>
+            <div class="home-content-right wrapper-grid">
+              <img class="avatar" src={avatar}></img>
             </div>
           </div>
           <SocialMedia></SocialMedia>
@@ -76,15 +80,25 @@ function App() {
 
       <section id="about">
         <div class="container">
+          <h1 class="about-text">
+            {launchTerminalClicked ? (
+              ""
+            ) : (
+              <>
+                To find out <span class="blue-text glow-text">About Me</span>,
+                click the button below!
+              </>
+            )}
+          </h1>
           {launchTerminalClicked ? (
-            <Terminal />
+            <Terminal handleClick={onClickLaunchTerminal} />
           ) : (
             <LaunchBtn handleClick={onClickLaunchTerminal} />
           )}
         </div>
       </section>
 
-      <section id="history">
+      <section id="timeline">
         <div class="container" id="timeline-container">
           <Timeline />
         </div>
@@ -93,7 +107,7 @@ function App() {
         <div class="container"></div>
       </section>
 
-      <section id="credentials">
+      <section id="accreditations">
         <div class="container"></div>
       </section>
 
