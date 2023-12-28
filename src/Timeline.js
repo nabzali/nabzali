@@ -3,13 +3,18 @@ import "./styles.css";
 import Modal from "./Modal";
 
 function Timeline() {
-  const [timelineContentClicked, SetTimelineContentClicked] = useState(false);
+  const [timelineContentClicked, setTimelineContentClicked] = useState(false);
   const [modalSelection, setModalSelection] = useState("");
 
   function onClickTimeline(value) {
-    SetTimelineContentClicked(true);
+    setTimelineContentClicked(true);
     setModalSelection(value);
   }
+
+  function onClickCloseModal() {
+    setTimelineContentClicked(false);
+  }
+
   return (
     <>
       <div class="timeline">
@@ -73,7 +78,13 @@ function Timeline() {
           <p>Beal Sixth Form</p>
         </a>
       </div>
-      <>{timelineContentClicked ? <Modal modalData={modalSelection} /> : ""}</>
+      <>
+        {timelineContentClicked ? (
+          <Modal modalData={modalSelection} handleClose={onClickCloseModal} />
+        ) : (
+          ""
+        )}
+      </>
     </>
   );
 }
