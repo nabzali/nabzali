@@ -9,6 +9,7 @@ import SocialMedia from "./SocialMedia";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import avatar from "./assets/hacker-avatar.jpg";
+import "animate.css";
 
 function App() {
   const el = React.useRef(null);
@@ -42,7 +43,10 @@ function App() {
     <>
       <noscript>You need to enable JavaScript to run this app.</noscript>
       <header>
-        <div class="container" id="nav-container">
+        <div
+          class="container animate__animated animate__fadeIn"
+          id="nav-container"
+        >
           <Navigation />
         </div>
       </header>
@@ -50,7 +54,7 @@ function App() {
       <section id="home">
         <div class="container">
           <div class="wrapper-flex">
-            <div class="home-content-left">
+            <div class="home-content-left animate__animated animate__fadeInLeft">
               <h1>
                 Hi, it's <span class="glow-text blue-text">Nabeel Ali</span>
               </h1>
@@ -69,12 +73,12 @@ function App() {
                   <FontAwesomeIcon icon={faCircleRight} />
                 </a>
               </div>
+              <SocialMedia></SocialMedia>
             </div>
-            <div class="home-content-right wrapper-grid">
+            <div class="home-content-right wrapper-grid animate__animated animate__fadeInRight">
               <img class="avatar" src={avatar}></img>
             </div>
           </div>
-          <SocialMedia></SocialMedia>
         </div>
       </section>
 

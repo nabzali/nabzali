@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import Typed from "typed.js";
+import "animate.css";
 // import  from "./assets/circle.drawio.svg";
 // import crossIcon from "./assets/cross.drawio.svg";
 
@@ -24,7 +25,7 @@ const Terminal = (props) => {
 
   return (
     <>
-      <div class="terminal">
+      <div class="terminal animate__animated animate__zoomInUp">
         <div class="terminal-titlebar">
           <div></div>
           <div class="text">Terminal — nabzali.github.io</div>
