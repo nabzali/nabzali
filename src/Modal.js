@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import "animate.css";
 
 const Modal = ({ modalData, handleClose }) => {
   const data = {
@@ -34,9 +35,9 @@ const Modal = ({ modalData, handleClose }) => {
 
   return (
     <>
-      <div class="modal">
+      <div class="modal animate__animated animate__fadeIn">
         <h3 class="modal-heading blue-text">{textToDisplay[0]}</h3>
-        <h3 class="modal-heading">{textToDisplay[1]}</h3>
+        <h4 class="modal-heading">{textToDisplay[1]}</h4>
         <p>{textToDisplay[2]}</p>
         <a class="btn-b btn-long btn-light" onClick={() => handleClose()}>
           Close

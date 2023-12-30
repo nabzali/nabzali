@@ -25,7 +25,7 @@ const Terminal = (props) => {
 
   return (
     <>
-      <div class="terminal animate__animated animate__zoomInUp">
+      <div class="terminal animate__animated animate__fadeInUp">
         <div class="terminal-titlebar">
           <div></div>
           <div class="text">Terminal — nabzali.github.io</div>

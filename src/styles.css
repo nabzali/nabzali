@@ -328,6 +328,17 @@ a h2 {
   padding: 0px 10px;
 }
 
+.terminal-body {
+  font-family: "Consolas", monospace;
+  font-size: 1.25rem;
+  padding: 10px 10px 0 10px;
+  border-radius: 0 0 12px 12px;
+  background-color: #00000055;
+  height: 40vh;
+  width: 50%;
+  max-width: 800px;
+}
+
 .terminal-titlebar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -385,17 +396,6 @@ a h2 {
 
 .terminal {
   transform: translateY(-50%);
-}
-
-.terminal-body {
-  font-family: "Consolas", monospace;
-  font-size: 1.25rem;
-  padding: 10px 10px 0 10px;
-  border-radius: 0 0 12px 12px;
-  background-color: #00000055;
-  height: 40vh;
-  width: 50%;
-  max-width: 800px;
 }
 
 .terminal-text {
@@ -517,15 +517,16 @@ a h2 {
   border-radius: 20px;
   height: auto;
   width: auto;
-  display: grid;
-  grid-template-rows: auto auto auto auto;
+  display: flex;
+  flex-direction: column;
   padding: 20px 30px;
   box-shadow: 0 0 5px #0ef;
   border: 0.5px solid #0ef;
+  max-width: 60vh;
 }
 
 div.modal .btn-b {
-  justify-self: center;
+  margin: auto;
   margin-top: 20px;
 }
 
@@ -533,11 +534,18 @@ div.modal .btn-b:hover {
   cursor: pointer;
 }
 
+h4.modal-heading,
 h3.modal-heading {
   position: relative !important;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   text-align: left;
   display: inline;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h4.modal-heading {
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 1400px) {

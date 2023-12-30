@@ -111,15 +111,21 @@ function App() {
         </div>
       </section>
       <section id="skills">
-        <div class="container"></div>
+        <div class="container wrapper-grid">
+          <h1 class="blue-text">Coming Soon!</h1>
+        </div>
       </section>
 
       <section id="accreditations">
-        <div class="container"></div>
+        <div class="container wrapper-grid">
+          <h1 class="blue-text">Coming Soon!</h1>
+        </div>
       </section>
 
       <section id="contact">
-        <div class="container"></div>
+        <div class="container wrapper-grid">
+          <h1 class="blue-text">Coming Soon!</h1>
+        </div>
       </section>
 
       <footer>
