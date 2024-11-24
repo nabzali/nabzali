@@ -11,7 +11,7 @@
 ## 🔧 Featured Projects
 
 ### 1. [Personal Website](https://github.com/nabzali/nabzali.github.io)
-   - Description: Repo for my personal website, [nabzali.github.io](https://nabzali.github.io)
+   - Description: Repo for my personal website, [nabzali.github.io](https://nabzali.github.io/my-site)
 - Frameworks/Language(s): HTML, CSS
 
 ### 2. [Web Scraper]()
