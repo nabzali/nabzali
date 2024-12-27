@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* border: 1px dotted white; */
+}
+
+body {
+  box-sizing: border-box;
+  /* background-color: #0a1015; */
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(41, 55, 71) 0%,
+    #0a1015 100%
+  );
+  /* overflow: hidden; */
+  /* filter: drop-shadow(0 0 10px white); */
+}
+
+.home-content-right {
+  display: grid;
+  place-items: center;
+}
+
+.terminal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-30px);
+}
+
+.terminal-titlebar {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 40px 100px 20px #000;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgb(112, 110, 110) 0%,
+    rgb(74, 73, 73) 100%
+  );
+  height: 25px;
+  width: 600px;
+  border-radius: 12px 12px 0 0;
+}
+
+.terminal-body {
+  font-family: Consolas;
+  padding-top: 5px;
+  border-radius: 0 0 12px 12px;
+  background-color: #00000095;
+  height: 300px;
+  width: 600px;
+}
+
+.terminal-text {
+  white-space: pre-line;
+  color: rgb(252, 153, 31);
+  font-family: Consolas;
+}
+.terminal-text b {
+  white-space: pre-line;
+  color: rgb(255, 255, 255);
+  font-family: Consolas;
+}
+
+.btnLong {
+  background-color: #0ef !important;
+  color: #000 !important;
+  margin: 20px 0 5px 0;
+  padding: 6px 2px 6px 10px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 160px;
+  height: 25px;
+}
+
+.btnLong:hover {
+  background: transparent !important;
+  color: #0ef !important;
+}
+
+.btnLong .icon {
+  position: relative;
+  top: 3px;
+  left: 7px;
+  transform: scale(1.2);
+}
+
+.btnIcon {
+  margin: 0px 20px 0px 0px;
+  padding: 7px;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.btn {
+  box-shadow: 0 0 0.5rem #0ef;
+  background: transparent;
+  text-align: center;
+  color: #0ef;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0ef;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.btnIcon:hover {
+  transform: translateY(5px);
+}
+
+.btnIcon:hover::after {
+  content: attr(data-tooltip);
+  color: #0ef;
+  opacity: 35%;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  position: relative;
+  bottom: 240%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: auto;
+  margin: 15px 0px 15px 0px;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  height: 200px;
+  width: 210px;
+  margin: 0 30% 0 70%;
+  border-radius: 100%;
+  transform: translateX(300px) translateY(-10px) scale(1.3);
+  box-shadow: 0 0 2rem #0ef;
+  /* animation: box-animation 2s infinite; */
+}
+
+#timeline-container {
+  width: 95%;
+}
+
+header {
+  background: transparent;
+  padding: 30px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.name {
+  float: left;
+}
+
+.glow-text {
+  animation: pulse-text 4s ease-in-out infinite;
+}
+
+.blue-text {
+  color: #0ef !important;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+i {
+  margin: 0px 10px 10px 10px;
+}
+
+nav a,
+.name,
+i {
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* transition: color 0.3s ease-in-out; */
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul li a {
+  color: white;
+}
+
+li:hover a,
+li:hover i {
+  color: #0ef;
+}
+
+@keyframes pulse-text {
+  0% {
+    text-shadow: 0 0 0 #0ef; /* Initial shadow */
+  }
+  50% {
+    text-shadow: 0 0 50px #0ef; /* Intermediate shadow */
+  }
+  100% {
+    text-shadow: 0 0 1px #0ef; /* Final shadow */
+  }
+}
+
+@keyframes box-animation {
+  0% {
+    box-shadow: 0 0 80px #0ef; /* Initial shadow */
+  }
+
+  50% {
+    box-shadow: 0 0 80px rgb(255, 255, 255); /* Intermediate shadow */
+  }
+
+  100% {
+    box-shadow: 0 0 80px #0ef; /* Intermediate shadow */
+  }
+}
+
+section {
+  padding: 60px 0;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+footer {
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+h1,
+h2 {
+  margin: 0 0;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 0.8rem;
+  text-shadow: 2px 2px 20px #000000;
+}
+
+.top-right-text {
+  position: relative;
+  font-size: 0.6rem;
+  float: right;
+  border-radius: 5px;
+  bottom: 100%;
+  top: -15px;
+  right: 5px;
+  padding: 4px 8px 4px 8px;
+  size: 10px;
+  background-color: rgb(10, 10, 10);
+}
+
+/* new styles  */
+
+.timeline {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+}
+
+.timeline-content {
+  padding: 4px 10px;
+  color: #fff;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  background: linear-gradient(180deg, rgb(25, 25, 25) 0%, rgb(23, 23, 23) 100%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-content:hover {
+  box-shadow: 0 0 15px #0ef;
+  border: 2px solid #0ef;
+  background: #0a1015;
+  transform: scale(1.02);
+}
+
+.timeline-component {
+  margin: 10px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    transform: scale(0.75);
+  }
+}
+.timeline-middle {
+  position: relative;
+  top: 40%;
+  background-image: linear-gradient(45deg, #0ef, #0ef, #0ef);
+  width: 3px;
+  height: 100%;
+}
+.main-middle {
+  opacity: 0;
+}
+.timeline-circle {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #0ef, #0ef, #0ef);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#circle-top {
+  top: 0%;
+}

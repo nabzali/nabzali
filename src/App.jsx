@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import avatar from "./assets/hacker-avatar.jpg";
 import "animate.css";
+import Contact from "./Contact";
 
 function App() {
   const el = React.useRef(null);
@@ -17,14 +18,22 @@ function App() {
   const [launchTerminalClicked, setLaunchTerminalClicked] = useState(false);
 
   function onClickLaunchTerminal() {
-    setLaunchTerminalClicked((prevState) => !prevState);
+    setLaunchTerminalClicked((prevState) => {
+      // Scroll adjustment for both opening and closing
+      setTimeout(() => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100); // Small delay to ensure component state is updated
+      return !prevState;
+    });
   }
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Front-end Developer",
-        "Back-end Developer",
+        "Software Developer",
         "Technical Consultant",
       ],
       typeSpeed: 100,
@@ -104,8 +113,8 @@ function App() {
 
       <section id="timeline">
         <div class="container" id="timeline-container">
+          <h1 class="blue-text glow-text">Timeline:</h1>
           <div class="wrapper-grid" id="timeline-wrapper">
-            <h1 class="blue-text glow-text">Timeline:</h1>
             <Timeline />
           </div>
         </div>
@@ -124,7 +133,7 @@ function App() {
 
       <section id="contact">
         <div class="container wrapper-grid">
-          <h1 class="blue-text">Coming Soon!</h1>
+          <Contact />
         </div>
       </section>
 

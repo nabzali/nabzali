@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCode,
@@ -8,15 +8,22 @@ import {
   faAddressCard,
   faUserGraduate,
   faMessage,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import "./styles.css";
 
 function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <span class="name blue-text">Portfolio.</span>
       <nav>
-        <ul>
+        <ul className={isMenuOpen ? "show" : ""}>
           <li>
             <a href="#home">
               <FontAwesomeIcon icon={faHouse} />
@@ -54,6 +61,11 @@ function Navigation() {
             </a>
           </li>
         </ul>
+        <div class="burger-menu" onClick={toggleMenu}>
+          <a>
+            <FontAwesomeIcon icon={faBars} />
+          </a>
+        </div>
       </nav>
     </>
   );
