@@ -203,8 +203,7 @@ li:hover i {
 .social-media {
   display: flex;
   align-items: center;
-  justify-content: left;
-  width: auto;
+  margin: 20px 0;
 }
 
 .wrapper-flex {
@@ -272,13 +271,13 @@ h3 {
 }
 
 .btn-dark {
+  background-color: #293747;
   color: #0ef;
-  background-color: transparent;
 }
 
 .btn-dark:hover {
   background-color: #0ef;
-  color: black;
+  color: #293747;
 }
 
 .btn-b {
@@ -299,26 +298,38 @@ h3 {
   transform: translateY(5px);
 }
 
+.btn-icon {
+  margin: 0px 20px 0px 0px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-icon svg {
+  width: 20px;
+  height: 20px;
+  color: inherit;
+}
+
 .btn-icon:hover::after {
   content: attr(data-tooltip);
   color: #0ef;
   opacity: 90%;
   border-radius: 5px;
   font-size: 0.65rem;
-  position: relative;
-  bottom: 240%;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  display: block;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-div.optionBtns a.btn-long svg {
-  transform: translate(5px, -1.5px) !important;
-}
-
-.wrapper-grid a.btn-long svg {
-  transform: translate(2px, -3px) scale(1.5) !important;
 }
 
 .btn-long {
@@ -352,14 +363,6 @@ div.optionBtns a.btn-long svg {
   top: 3px;
   left: 7px;
   transform: scale(1.2);
-}
-
-.btn-icon {
-  margin: 0px 20px 0px 0px;
-  padding: 7px;
-  border-radius: 50px;
-  width: 20px;
-  height: 20px;
 }
 
 .terminal {
@@ -797,4 +800,119 @@ footer {
 .contact-form button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+/* Accreditations Styles */
+.accreditations-container {
+  padding: 50px 0;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.cert-card {
+  background-color: #293747;
+  border-radius: 15px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 238, 255, 0.2);
+}
+
+.cert-content {
+  text-align: center;
+}
+
+.cert-icon {
+  font-size: 3rem;
+  color: #0ef;
+  margin-bottom: 15px;
+}
+
+.cert-card h3 {
+  margin-bottom: 10px;
+  color: #0ef;
+}
+
+.cert-card p {
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+.cert-date {
+  font-size: 0.9rem;
+  color: #0ef;
+  margin-top: 15px !important;
+}
+
+/* Media Queries for Accreditations */
+@media screen and (max-width: 768px) {
+  .wrapper-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  
+  .cert-card {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+}
+
+/* Skills Styles */
+.skills-container {
+  padding: 50px 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background-color: #293747;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 238, 255, 0.2);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  color: #0ef;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  color: #0ef;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* Media Queries for Skills */
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0 20px;
+  }
 }

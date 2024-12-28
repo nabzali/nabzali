@@ -6,6 +6,8 @@ import Timeline from "./Timeline";
 import LaunchBtn from "./LaunchBtn";
 import Navigation from "./Navigation";
 import SocialMedia from "./SocialMedia";
+import Accreditations from "./Accreditations";
+import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import avatar from "./assets/hacker-avatar.jpg";
@@ -120,14 +122,14 @@ function App() {
         </div>
       </section>
       <section id="skills">
-        <div class="container wrapper-grid">
-          <h1 class="blue-text">Coming Soon!</h1>
+        <div class="container">
+          <Skills />
         </div>
       </section>
 
       <section id="accreditations">
         <div class="container wrapper-grid">
-          <h1 class="blue-text">Coming Soon!</h1>
+          <Accreditations />
         </div>
       </section>
 
