@@ -47,8 +47,8 @@ function Contact() {
 
   return (
     <div className="contact-form-container">
-      <h1 className="blue-text glow-text">Contact Me</h1>
-      <form ref={form} onSubmit={handleSubmit} className="contact-form">
+      <h1 className="blue-text glow-text">Contact Me (In Development)</h1>
+      {/* <form ref={form} onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <input
             type="text"
@@ -95,7 +95,7 @@ function Contact() {
             {submitStatus.message}
           </div>
         )}
-      </form>
+      </form> */}
     </div>
   );
 }

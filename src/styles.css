@@ -360,7 +360,12 @@ h3 {
 
 .btn-long .iconify {
   position: relative;
-  top: 3px;
+  left: 7px;
+  transform: scale(1.2);
+}
+
+.btn-long svg {
+  position: relative;
   left: 7px;
   transform: scale(1.2);
 }

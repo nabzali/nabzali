@@ -11,7 +11,7 @@ const Terminal = (props) => {
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "About me...\n\n<b>Name:</b> Nabeel S. Ali\n<b>Occupation:</b> Full-Stack Software Developer, Technical Consultant\n<b>Qualification(s):</b> BSc Computer Science (with Year in Industry)\n<b>Alma Mater:</b> The University of Nottingham\n<b>Hometown:</b> London, United Kingdom\n<b>Origin:</b> Mixed (Pakistani/English)\n<b>Interests:</b> Football, Travelling, Gym, Praying, Books, Learning\n\n",
+        "About me...\n\n<b>Name:</b> Nabeel S. Ali\n<b>Occupation:</b> Full-Stack Software Developer, Technical Consultant\n<b>Qualification(s):</b> BSc Computer Science (with Year in Industry)\n<b>Alma Mater:</b> The University of Nottingham\n<b>Hometown:</b> London, United Kingdom\n<b>Interests:</b> Football, Travelling, Gym, Praying, Books, Learning\n\n",
       ],
       typeSpeed: 30,
       backSpeed: 100,

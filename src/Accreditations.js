@@ -8,7 +8,7 @@ function Accreditations() {
       <h1 className="blue-text glow-text">Accreditations</h1>
       <div className="wrapper-grid">
         <a
-          href="https://www.credly.com/badges/b9f12b2d-c4cc-4a4a-8c4c-c9c5f7d0d8f6/public_url"
+          href="https://www.credly.com/badges/f6610617-be51-411a-82b0-b5f24772daac"
           className="cert-card"
           target="_blank"
           rel="noopener noreferrer"
@@ -17,7 +17,7 @@ function Accreditations() {
             <Icon icon="simple-icons:amazonaws" className="cert-icon" />
             <h3>AWS Certified Cloud Practitioner</h3>
             <p>Amazon Web Services (AWS)</p>
-            <p className="cert-date">Issued Dec 2023</p>
+            <p className="cert-date">Issued January 2024</p>
           </div>
         </a>
       </div>

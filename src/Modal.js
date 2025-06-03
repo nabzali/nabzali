@@ -7,12 +7,12 @@ const Modal = ({ modalData, handleClose }) => {
     university: [
       "Bsc Computer Science",
       "The University of Nottingham",
-      "Voluptate velit velit officia ullamco magna.",
+      "2:1, Computer Science with Year in Industry. AI, Databases, Networking, Algorithms, HCI, etc.",
     ],
     ibm: [
       "Year in Industry - Technology Rotation",
       "IBM",
-      "Culpa pariatur non consectetur est reprehenderit et reprehenderit elit adipisicing qui.",
+      "C#, Python, Automated Testing, Hackathons, ML",
     ],
     alevels: [
       "A Levels",
@@ -22,12 +22,12 @@ const Modal = ({ modalData, handleClose }) => {
     job2: [
       "Software Developer, Technical Consultant",
       "Reply",
-      "Et et esse adipisicing officia Lorem ad duis nulla officia est et eiusmod exercitation ipsum.",
+      "AWS, React, Web Dev, Generative AI, Cloud Engineering, Consulting, Terraform, Agile Practices",
     ],
     job1: [
       "Junior Software Developer",
       "Mazepoint",
-      "Id anim ad adipisicing in pariatur commodo incididunt officia do ut dolore ipsum adipisicing ex.",
+      "Web Dev, .NET, Powershell",
     ],
   };
 

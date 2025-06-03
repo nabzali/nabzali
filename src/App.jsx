@@ -75,7 +75,7 @@ function App() {
               </h2>
               <h2>Welcome to my Personal Website...</h2>
               <div class="optionBtns">
-                <a class="btn-b btn-long btn-light" id="download-cv" href="#">
+                <a class="btn-b btn-long btn-light" id="download-cv" href="/CV.pdf" download>
                   Download CV
                   <FontAwesomeIcon icon={faDownload} />
                 </a>
@@ -141,7 +141,7 @@ function App() {
 
       <footer>
         <div class="container">
-          <p>&copy; 2024 Nabeel Ali. All rights reserved.</p>
+          <p>&copy; 2025 Nabeel Ali. All rights reserved.</p>
         </div>
       </footer>
       {/* <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

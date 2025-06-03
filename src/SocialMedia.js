@@ -13,13 +13,6 @@ function SocialMedia() {
         >
           <Icon icon="mdi:linkedin" />
         </a>
-        <a
-          class="btn-b btn-icon btn-dark"
-          data-tooltip="Instagram"
-          href="https://www.instagram.com/nabz.ali_"
-        >
-          <Icon icon="ri:instagram-fill" />
-        </a>
         {/* <a
                   class="btn-b btn-icon btn-dark"
                   data-tooltip="Pinterest"

@@ -38,7 +38,7 @@ function Skills() {
 
   return (
     <div className="skills-container">
-      <h1 className="blue-text glow-text">Skills</h1>
+      <h1 className="blue-text glow-text">Key Skills</h1>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
