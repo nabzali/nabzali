@@ -3,28 +3,10 @@
 ## About Me
 
 - 💻 Software Developer & Technical Consultant
-- 💬 Languages: Python🐍, JavaScript🔥, Java♨️, C#, and more! 
-- 🎓 Graduate of Computer Science at University of Nottingham, with Year in Industry at IBM 🤓
+- 💬 Core Technical Skills: TypeScript/JavaScript🔥, React, Terraform, AWS, NodeJs 
+- 🎓 Graduate of Computer Science at University of Nottingham, with Year in Industry
 - Certified AWS Cloud ☁️ Practitioner
 
-## 🔧 Featured Projects
-
-### 1. [Personal Website](https://github.com/nabzali/nabzali.github.io)
+### See My Personal Website (https://github.com/nabzali/nabzali.github.io)
    - Description: Repo for my personal website, [nabzali.github.io](https://nabzali.github.io/my-site)
 - Frameworks/Language(s): HTML, CSS
-
-### 2. [Web Scraper]()
-   - Description: A sleek and efficient [Project B] for all your coding needs.
-   - Language: [Language Used]
-
-### 3. [Coming Soon](link-to-project-C)
-   - Description: Dive into the magic of [Project C], where code meets creativity!
-   - Language: [Language Used]
-
-### 4. [Python Projects](link-to-project-C)
-   - Description: Dive into the magic of [Project C], where code meets creativity!
-   - Language: [Language Used]
-
-## 🚀 What's Next?
-
-I plan to embark on more exciting projects and adding to these repositories in the near future 🚀✨
