@@ -9,4 +9,3 @@
 
 ### See My Personal Website (https://github.com/nabzali/nabzali.github.io)
    - Description: Repo for my personal website, [nabzali.github.io](https://nabzali.github.io/my-site)
-- Frameworks/Language(s): HTML, CSS
