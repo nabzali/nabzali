@@ -8,4 +8,4 @@
 - Certified AWS Cloud ☁️ Practitioner
 
 ### See My Personal Website
-   - [nabzali.github.io](https://nabzali.github.io/my-site)
+   - [nabzali.github.io/my-site](https://nabzali.github.io/my-site)
