@@ -8,4 +8,4 @@
 - Certified AWS Cloud ☁️ Practitioner
 
 ### See My Personal Website
-   - Description: Repo for my personal website, [nabzali.github.io](https://nabzali.github.io/my-site)
+   - [nabzali.github.io](https://nabzali.github.io/my-site)
